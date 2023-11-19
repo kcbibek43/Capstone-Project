@@ -1,0 +1,168 @@
+img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+.img{
+    height: 160px;
+}
+.no{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.frontpage{
+    min-height: 70vh;
+}
+.row{
+    justify-content: center;
+}
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search{
+    justify-content: space-between;
+}
+
+.filter{
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.select{
+    border: none;
+    width: 20vw;
+    height: 8vh;
+}
+.center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .wrapperind {
+    height: calc(100vh - 20px);
+  }
+  .inner {
+    padding: 12px;
+  }
+
+.filter-head{
+    font-weight: 900;
+    font-size: medium;
+    opacity: 0.6;
+    justify-content: start;
+}
+
+.section{
+    flex-direction: column;
+    align-items: center;
+}
+.hl{
+    border: 1px solid black;
+    height: 60px;
+    align-self : center;
+    opacity: 0.4;
+}
+
+.loca{
+    border: none;
+    width: 100%;
+    height: 6vh;
+}
+
+.main{
+    border-radius: 8px;
+    border: 1.6px solid rgb(90, 76, 237);
+    height: 50px;
+    width : 25vw;
+}
+input[type=text]:focus {
+    border: 0.5px solid rgb(90, 76, 237);
+}
+.input {
+    border: unset;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+  }
+  .inputhead {
+    border: unset;
+    max-width: 400px;
+    height: 8vh;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+  }
+option{
+
+}
+
+::placeholder{
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: medium;
+}
+.loca::placeholder{
+    padding: 0;
+    text-align: center;
+}
+
+.card-body{
+    height: 150px;
+    margin-left: 10px;
+}
+
+.heading{
+    font-weight: 900;
+    font-size: large;
+    color:rgb(90, 76, 237);
+}
+.container{
+    margin-top: 5vh;
+}
+.opac{
+    font-weight: 600;
+    font-size: small;
+    opacity: 0.4;
+    align-items: center;
+}
+.head{
+    align-items: center;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2{
+    font-weight: 900;
+}
+.property{
+    height: 60px;
+}
+
+.property-opac{
+    height: 50px;
+    align-items: center;
+}

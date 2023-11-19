@@ -1,0 +1,87 @@
+<div class="doc" *ngIf = "!docAvailable && isAvailable" >
+  <h1>No Request for Property</h1>
+</div>
+<div *ngIf="!isAvailable">
+  <div class="wrapperind center">
+    <div class="inner">
+      <mat-progress-spinner
+        value-="50"
+        mode="indeterminate"
+      ></mat-progress-spinner>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4" *ngIf = "docAvailable && isAvailable"  >
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">UserName</th>
+        <th scope="col">View Property</th>
+        <th scope="col">Action</th>
+        <th scope="col">Verify</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let info of documents; index as i">
+        <th scope="row">{{i+1}}</th>
+
+        <td>{{userName[i]}}</td>
+        <td><a (click) = "goToProperty(i)" ><button
+          type="button"
+          class="btn btn-success"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          View Property
+        </button></a></td>
+        <td>
+          <button
+          (click) = "viewDocs(i)"
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            View Document
+          </button>
+        </td>
+        <td>
+          <button
+          (click) = "verify(i)"
+            type="button"
+            class="btn btn-success"
+            id = "verified {{i}}"
+          >
+            Verify
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Id Proof</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+        
+        <pdf-viewer
+        [src]="selectedFile"
+        backgroundColor="#ffffff"
+        [render-text]="true"
+        [original-size]="false"
+        style="width: 60vw; height: 70vh"
+        >
+        </pdf-viewer>
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-danger" (click)="d('Cross click')">Close</button>
+	</div>
+</ng-template>
+

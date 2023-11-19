@@ -1,0 +1,33 @@
+.modal-body{
+    width: 70vw;
+    height: 70vh;
+}
+
+.pdf{
+    width: 100%;
+    height: 100%;
+}
+
+.doc{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    min-height: 70vh;
+}
+
+.center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .wrapperind {
+    height: calc(100vh - 20px);
+  }
+  .inner {
+    padding: 12px;
+  }

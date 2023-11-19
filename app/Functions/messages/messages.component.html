@@ -1,0 +1,64 @@
+<div class="main">
+  <div class="row d-flex p-3">
+    <div class="col1 col-4 p-2">
+      <div class="appoint">
+        <h3>Set Appointment With {{ reciever }}</h3>
+        <div class="appointment">      
+              <mat-form-field appearance="outline" class="example-form-field">
+                <mat-label>Enter a date range</mat-label>
+                <mat-date-range-input [rangePicker]="rangePicker">
+                  <input (dateChange) = "startDateAppoint($event)" matStartDate placeholder="Start date" />
+                  <input (dateChange) = "endDateAppoint($event)" matEndDate placeholder="End date" />
+                </mat-date-range-input>
+                <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle
+                  matIconSuffix
+                  [for]="rangePicker"
+                ></mat-datepicker-toggle>
+                <mat-date-range-picker #rangePicker>
+                  <mat-date-range-picker-actions>
+                    <button mat-button matDateRangePickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDateRangePickerApply>
+                      Apply
+                    </button>
+                  </mat-date-range-picker-actions>
+                </mat-date-range-picker>
+              </mat-form-field>
+        </div>
+        <div class="button">
+            <button (click) = "setMeeting()" class="btn my-2">Schedule Meeting</button>   
+        </div>
+        <h6 *ngIf = "booked && appointmentAvailable ">Booked Sucessfully </h6>
+        <h6 *ngIf = "!appointmentAvailable && !booked"> This time is booked already. Choose another</h6>
+      </div>
+    </div>
+    <div class="col2 col-8">
+        <div class="container">
+            <div class="row">
+              <section class="chat">
+                <div class="header-chat">
+                  <i class="icon fa fa-user-o" aria-hidden="true"></i>
+                  <p class="name">{{ reciever }}</p>
+                </div>
+                <div class="messages-chat">
+                    <div class="message" *ngFor = "let item of info">
+                        <div class="response" *ngIf = "( reciever != item.from)">
+                            <p class="response text">{{item.message}}</p>
+                          </div>
+                         <p class="text" *ngIf = " reciever == item.from">{{item.message}}</p>
+                       </div>
+                </div>
+                <div class="footer-chat">
+                  <input id = "message" (keyup) = "messageRes($event)" type="text" class="write-message" placeholder="Type your message here">
+
+                  <a (click) = "sendMessage()">
+                    <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i>
+                  </a>
+
+                </div>
+              </section>
+            </div>
+          </div>     
+    </div>
+  </div>
+</div>

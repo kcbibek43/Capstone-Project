@@ -1,0 +1,168 @@
+<div class="container m-4">
+  <div class="row gutters">
+    <div class="def col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="account-settings">
+            <div class="user-profile">
+              <div class="user-avatar">
+                <img  [src]="user.image" alt="Maxwell Admin" />
+              </div>
+              <h5 class="user-name">{{user.userName}}</h5>
+              <h6 class="user-email">{{user.email}}</h6>
+            </div>
+            <div class="about">
+              <h5 class="text text-center">About</h5>
+              <p><span class="text">Name </span> : {{user.name}}</p>
+              <p><span class="text">Phone </span> : {{user.phone}}</p>
+              <p><span class="text">Address </span> : {{user.zipCode}} , {{user.street}} , {{user.city}} , {{user.state}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="def col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+      <div class="card h-100">
+        <div class="card-body">
+      <form [formGroup] = "userForm!">       
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h6 class="my-3 text">Personal Details</h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input
+                  formControlName = "name"
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Enter full name"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="eMail">UserName</label>
+                <input
+                formControlName = "userName"
+                  type="email"
+                  class="form-control"
+                  id="eMail"
+                  placeholder="Enter email ID"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                formControlName = "phone"
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter phone number"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="website">Image </label>
+                <input
+                (change)="uploadImage($event)"
+                  id="selectAvatar"
+                  class="form-control"
+                  type="file"
+                  name="myfile"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h6 class="mt-3 mb-2 text">Address</h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="Street">Street</label>
+                <input
+                formControlName = "street"
+                  type="name"
+                  class="form-control"
+                  id="Street"
+                  placeholder="Enter Street"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="ciTy">City</label>
+                <input
+                formControlName = "city"
+                  type="name"
+                  class="form-control"
+                  id="ciTy"
+                  placeholder="Enter City"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="sTate">State</label>
+                <input
+                formControlName = "state"
+                  type="text"
+                  class="form-control"
+                  id="sTate"
+                  placeholder="Enter State"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="zIp">Zip Code</label>
+                <input
+                formControlName = "zipCode"
+                  type="text"
+                  class="form-control"
+                  id="zIp"
+                  placeholder="Zip Code"
+                />
+              </div>
+            </div>
+          </div>
+          </form>    
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="text-right">
+                <button (click) = "postData()" type="button" id="submit" name="submit" class="btn">
+                  Update
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+
+
+  </div>
+</div>
+
+<script>
+  const input = document.getElementById("selectAvatar");
+  const avatar = document.getElementById("avatar");
+
+
+
+  const uploadImage = async (event) => {
+    const file = event.target.files[0];
+    const base64 = await convertBase64(file);
+    avatar.src = base64;
+  };
+
+  input.addEventListener("change", (e) => {
+    uploadImage(e);
+  });
+</script>

@@ -1,0 +1,73 @@
+<div *ngIf="isLoading">
+    <div class="wrapperind center">
+      <div class="inner">
+        <mat-progress-spinner
+          value-="50"
+          mode="indeterminate"
+        ></mat-progress-spinner>
+      </div>
+    </div>
+</div>
+<div class="card my-3" *ngIf="!isLoading">
+    <div class="leftside col-6">
+      <img
+      src="../../assets/Img/{{checkOutProperty.images[0]}}_frontal.jpg"
+        class="product"
+        alt="Shoes"
+      />
+    </div>
+    <div class="rightside col-6">
+      <form action="">
+        <h1>CheckOut</h1>
+        <h2>Payment Information</h2>
+        <div class="input d-flex ">
+          <div class="inp col-9">
+                <p>Id Proof </p>
+        <input
+          type="file"
+          class="inputbox"
+          name="card_number"
+          id="card_number"
+          placeholder="Ex.pdf"
+          (change) = "inputDoc($event , 1)"
+          required
+        />      
+          </div>
+
+        <svg *ngIf = "isVerified" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+          <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+          <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+        </svg>    
+        <svg *ngIf = "!isVerified" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-x" viewBox="0 0 16 16">
+          <path d="M6.854 7.146a.5.5 0 1 0-.708.708L7.293 9l-1.147 1.146a.5.5 0 0 0 .708.708L8 9.707l1.146 1.147a.5.5 0 0 0 .708-.708L8.707 9l1.147-1.146a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146z"/>
+          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+        </svg>    
+        </div>
+        <div class="input d-flex">
+          <div class="inp  col-9">
+                <p>Id Proof </p>
+        <input
+          type="file"
+          class="inputbox"
+          name="card_number"
+          id="card_number"
+          placeholder="Ex.pdf"
+          (change) = "inputDoc($event , 2)"
+          required
+        />      
+          </div>
+
+          <svg *ngIf = "isVerified" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+            <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+          </svg>    
+          <svg *ngIf = "!isVerified" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-x" viewBox="0 0 16 16">
+            <path d="M6.854 7.146a.5.5 0 1 0-.708.708L7.293 9l-1.147 1.146a.5.5 0 0 0 .708.708L8 9.707l1.146 1.147a.5.5 0 0 0 .708-.708L8.707 9l1.147-1.146a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146z"/>
+            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+          </svg>        
+        </div>
+        <a *ngIf = "isVerified" (click) = "payment()"><button type="submit" [ngClass]="isRole ? 'button' : 'button2'"disabled>CheckOut</button></a>
+        <a *ngIf = "!isVerified" (click) = "sendDocs()"><button type="submit" [ngClass]="isRole ? 'button' : 'button2'">PostDocument</button></a>
+      </form>
+    </div>
+  </div>

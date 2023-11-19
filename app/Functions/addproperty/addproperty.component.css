@@ -1,0 +1,86 @@
+
+
+.text{
+    font-weight: 900;
+    font-size: medium;
+    opacity: 0.9;
+    color: rgb(90, 76, 237);
+}
+
+.img{
+    height: 30vw;
+    width: 30vh;
+}
+
+.text-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.row{
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: medium;
+    opacity: 0.9;
+}
+
+input{
+    border: unset;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    justify-self: end;
+    margin: 4vh;
+    width: 12vw;
+    height: 6vh;
+    color: white;
+    background-color: rgb(90, 76, 237);
+}
+
+.card-body{
+    margin: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+}
+
+
+.form-control {
+    border: 1px solid #cfd1d8;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #ffffff;
+    color: #2e323c;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-div{
+    width: 80%;
+}
+
+label{
+    align-self: start;
+}
+
+
+

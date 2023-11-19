@@ -1,0 +1,145 @@
+
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+.notification {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 60%;
+    background: rgb(90, 76, 237);
+    color: white;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  h1{
+	font-size: 4vw;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+  font-weight: 600;
+  color:  rgb(90, 76, 237);
+}
+.logo{
+    height: fit-content;
+    align-items: center;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logout{
+    margin-left: 2vw;
+    height: 4vw;
+    width: 8vw;
+    border: none;
+    color: white;
+    background-color: rgb(90, 76, 237);
+    border-radius: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  li {
+    list-style-type: none;
+    position: relative;
+    padding: 0.625rem 0 0.5rem;
+  }
+  li ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    align-items: flex-start;
+    transition: all 0.5s ease;
+    width: 20rem;
+    right: -3rem;
+    top: 4.5rem;
+    border-radius: 0.325rem;
+    gap: 0;
+    padding: 1rem 0rem;
+    opacity: 0;
+    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+
+  .sub-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.725rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .sub-item:hover {
+    background-color: rgba(232, 232, 232, 0.4);
+  }
+  
+  .sub-item:hover .material-icons-outlined {
+    color: rgb(90, 76, 237);
+    transform: scale(1.08) translateY(-2px);
+    cursor: pointer;
+  }
+  
+  .sub-item:hover p {
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .sub-item p {
+    font-size: 0.85rem;
+    color: #888888;
+    font-weight: 500;
+    margin: 0.4rem 0;
+    flex: 1;
+  }
+
+.profile-img{
+    border-radius: 70%;
+}
+img{
+    height: 4vw;
+    width : 4vw;
+    cursor: pointer;
+}
+
+.signout{
+    align-items: center;
+    justify-content: end;
+    gap: 2vw;
+}
+
+nav{
+    background-color: white;
+}
+
+.dropdown{
+    z-index: 1;
+}

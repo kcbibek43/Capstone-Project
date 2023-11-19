@@ -1,0 +1,220 @@
+
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ .but{
+    justify-content: center;
+ }
+ 
+
+ h2 span { 
+    background-color: rgb(249,249,253);
+     padding:0 10px; 
+ }
+
+ .form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+.role{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(249,249,253);
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login{
+    margin: 20px;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: calc( 100vh - 40px);
+    background-color: #fff;
+    flex-direction: column;
+}
+p{
+    opacity: 0.8;
+}
+h4{
+    opacity: 0.8;
+}
+
+button{
+    border-radius: 6px;
+    border: none;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     width: 13vw;
+     height: 6vh;
+}
+
+*{
+	box-sizing: border-box;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+.registration-form{
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.registration-form input{
+    width: 100%;
+}
+
+form button:hover,
+form button:focus,
+form button:active,
+form button.loading{
+	background: rgb(112,101,240);
+	color: #fff;
+    border: rgb(90, 76, 237);
+	outline: none;
+}
+
+form label{
+	border-bottom: 1px solid #333;
+	display: block;
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+form label.col-one-half{
+	float: left;
+	width: 50%;
+}
+form label.col-one-half:nth-of-type(even){
+	border-left: 1px solid #333;
+	padding-left: 0.25em;
+}
+
+form label input{
+	background: none;
+	border: none;
+	line-height: 1em;
+	font-weight: 300;
+	padding: 0.125em 0.25em;
+	width: 100%;
+}
+
+.error{
+    color: red;
+}
+
+.checkbox{
+	justify-content: start;
+}
+#showPassword{
+	width: 20px;
+	margin-right: 10px;
+}
+
+form label input:focus{
+	outline: none;
+}
+form label input:-webkit-autofill{
+	background-color: transparent !important;
+}
+form label span.label-text{
+	display: block;
+	font-size: 0.5em;
+	font-weight: bold;
+	padding-left: 0.5em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+form label.checkbox{
+	border-bottom: 0;
+	text-align: center;
+}
+form label.checkbox input{
+	display: none;
+}
+form label.checkbox span{
+	font-size: 0.5em;
+}
+form label.checkbox span:before{
+	content: '\e157';
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-size: 1.125em;
+	padding-right: 0.25em;
+	position: relative;
+    top: 1px;
+}
+
+form label.password button.toggle-visibility{
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.75em;
+	line-height: 1em;
+	position: absolute;
+		top: 50%;
+		right: 0.5em;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+
+.true{
+    background-color: rgb(249,249,253);
+    color: rgb(90, 76, 237);
+    border: 0.5px solid rgb(90, 76, 237);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-weight: 700;
+}
+form label.password button.toggle-visibility span{vertical-align: middle;}
+
+h1{
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+    color:  rgb(90, 76, 237);
+}
+
+.false{
+    background-color: rgb(249,249,253);
+    box-shadow: none;
+}
+
+.submit{
+    background-color: rgb(249,249,253);
+    border: 0.5px solid rgb(90, 76, 237);
+}
+
+.submit :hover{
+    color: rgb(249,249,253);
+    background-color: rgb(90, 76, 237);
+}
+
+.text-center{
+	text-align: center;
+}
+.register{
+    color: rgb(90, 76, 237);
+    border-bottom: 0.5px solid rgb(90, 76, 237);
+}
+
+a{
+    cursor: pointer;
+}
+
+
+.content{
+    flex-direction: column;
+}

@@ -1,0 +1,71 @@
+<div class="no" *ngIf = "noProperty" >
+    <h1>Add Property To view</h1>
+</div>
+<div class="container" *ngIf = "!noProperty" >
+  <div class="search d-flex mx-3 mb-3">
+    <h2>Search Property To Rent</h2>
+    <form action="">
+      <input (keyup) = "searchProperty($event, 2)" class="main" type="text" placeholder="Search with Search Bar" name="search" />
+    </form>
+  </div>
+
+  <div class="filter d-flex my-1 mx-3">
+    <div class="section d-flex mt-1">
+      <p class="filter-head">Location</p>
+      <input (keyup) = "searchProperty($event, 1)" class="loca inputhead" type="text" placeholder="Type" name="search" />
+    </div>
+    <div class="hl"></div>
+    <div class="section d-flex">
+      <p class="filter-head">Price Range</p>
+      <select (change) = "filterProperty($event,1)" class="select input">
+        <option value="0">Input Price Range</option>
+        <option value="1">1,000,000-5,000,000</option>
+        <option value="2">5,000,001-8,000,000</option>
+        <option value="3">8,000,001-,1200,000</option>
+        <option value="4">12,000,001-15,000,000</option>
+        <option value="5">15,000,001-18,000,000</option>
+    </select>
+    </div>
+    <div class="hl"></div>
+    <div class="section d-flex mb-1">
+      <p class="filter-head">Number of Rooms</p>
+      <select (change)="filterProperty($event,2)" class="select input">
+        <option value="0">Room Count</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </div>
+  </div>
+  <div *ngIf="isLoading">
+    <div class="wrapperind center">
+      <div class="inner">
+        <mat-progress-spinner
+          value-="50"
+          mode="indeterminate"
+        ></mat-progress-spinner>
+      </div>
+    </div>
+  </div>
+  <div class="row frontpage d-flex" *ngIf="!isLoading ">
+    <div class="card my-3 mx-3" (click)="viewProperty(item.id)" *ngFor="let item of data" style="width: 15rem">
+      <div class="img">
+        <img *ngIf = "item.images.length === 1" src="../../assets/Img/{{ item.images[0] }}_frontal.jpg" alt="" />
+        <img *ngIf = "item.images.length === 4" src = "data:image/jpg;base64, {{item.images[0]}}" alt="">
+      </div>
+
+      <div class="card-body">
+        <p class="card-title">
+          <span class="heading">{{ item.rent | currency : "INR" }}</span
+          ><span class="opac">/year</span>
+        </p>
+        <h5 class="head">{{ item.type }}</h5>
+        <div class="property-opac d-flex">
+          <p class="opac">{{ item.location }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

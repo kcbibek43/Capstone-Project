@@ -1,0 +1,102 @@
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+.def{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.text{
+    font-weight: 900;
+    font-size: medium;
+    opacity: 0.9;
+    color: rgb(90, 76, 237);
+}
+
+.text-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+label{
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: medium;
+    opacity: 0.9;
+}
+
+input{
+    border: unset;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+.btn{
+    justify-self: end;
+    margin: 4vh;
+    width: 12vw;
+    height: 6vh;
+    color: white;
+    background-color: rgb(90, 76, 237);
+}
+
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: start;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #ffffff;
+    color: #2e323c;
+}
+
+.card {
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+}

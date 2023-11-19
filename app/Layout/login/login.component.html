@@ -1,0 +1,129 @@
+<div class="login p-2 d-flex" *ngIf="login">
+  <h1>Tenant Finder</h1>
+  <h4 class="text-center my-4">
+    Welcome to the Best {{ data }} For your Needs
+  </h4>
+  <div class="but d-flex">
+    <div class="role d-flex p-2">
+      <button
+        class="me-1"
+        [ngClass]="selected ? 'true' : 'false'"
+        (click)="styleButton(1)"
+      >
+        For Tenant
+      </button>
+
+      <button
+        class="ms-1"
+        [ngClass]="!selected ? 'true' : 'false'"
+        (click)="styleButton(2)"
+      >
+        For LandLord
+      </button>
+    </div>
+  </div>
+  <div class="form d-flex">
+     <form [formGroup] = "loginFormGroup!" class="registration-form p-3">
+    <label [ngStyle] = "{'color' : (loginFormGroup!.get('email')!.invalid && (loginFormGroup!.get('email')!.touched || loginFormGroup!.get('email')!.dirty)) ? 'red' : 'black'}" >
+      <span class="label-text">Username or Email</span>
+      <input formControlName = "email" type="text" name="email" />
+    </label>
+    <span *ngIf="loginFormGroup!.get('email')!.invalid && (loginFormGroup!.get('email')!.touched || loginFormGroup!.get('email')!.dirty) " style="color: red;font-size: 12px;">Invalid UserName</span>
+    <label [ngStyle] = "{'color' : (loginFormGroup!.get('password')?.invalid && (loginFormGroup!.get('password')!.touched || loginFormGroup!.get('password')!.dirty)) ? 'red' : 'black'}" class="password">
+        <span class="label-text">Password</span>
+        <input formControlName = "password" type="{{ showPassWord ? 'text' : 'password' }}" name="password" />
+      </label>
+      <div class="checkbox d-flex m-1">
+              <input (click) = "changeType()" type="checkbox" id="showPassword" /><p>show password</p>   
+      </div>
+    <span *ngIf="loginFormGroup!.get('password')!.invalid && (loginFormGroup!.get('password')!.touched || loginFormGroup!.get('password')!.dirty) " style="color: red;font-size: 12px;">Password can't be empty</span>
+
+    <div class="text-center">
+        <button class="submit" name="register" (click) = "loginUser()">Log in</button>
+      </div>  
+</form>
+
+    <div class="d-flex content">
+    <h2 class="text-center my-4"><span>OR</span></h2>
+    <p class="text-center my-3">
+      New to this app ?
+      <a (click)="selectFunction('register')"
+        ><span class="register">Create Account</span></a
+      >
+    </p>
+  </div>
+</div>
+</div>
+
+<div class="login p-2" *ngIf="!login">
+  <div class="header">
+    <h1>Tenant Finder</h1>
+    <h4 class="text-center my-4">
+      Welcome to the Best {{ data }} For your Needs
+    </h4>
+    <div class="but d-flex">
+      <div class="role d-flex p-2">
+        <button
+          class="me-1"
+          [ngClass]="selected ? 'true' : 'false'"
+          (click)="styleButton(1)"
+        >
+          For Tenant
+        </button>
+
+        <button
+          class="ms-1"
+          [ngClass]="!selected ? 'true' : 'false'"
+          (click)="styleButton(2)"
+        >
+          For LandLord
+        </button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="form d-flex">
+    <form [formGroup] = "registerFormGroup!" class="registration-form p-3">
+        <label [ngStyle] = "{'color' : (registerFormGroup!.get('name')!.invalid && (registerFormGroup!.get('name')!.touched || registerFormGroup!.get('name')!.dirty)) ? 'red' : 'black'}" class="col-one-half">
+          <span  class="label-text">Name</span>
+          <input  formControlName = "name" type="text" name="firstName" />
+        </label>
+        <label [ngStyle] = "{'color' : (registerFormGroup!.get('userName')!.invalid && (registerFormGroup!.get('userName')!.touched || registerFormGroup!.get('userName')!.dirty)) ? 'red' : 'black'}"  class="col-one-half">
+          <span  class="label-text">UserName</span>
+          <input  formControlName = "userName" type="text" name="lastName" />
+        </label>
+
+        <label [ngStyle] = "{'color' : (registerFormGroup!.get('email')!.invalid && (registerFormGroup!.get('email')!.touched || registerFormGroup!.get('email')!.dirty)) ? 'red' : 'black'}">
+          <span class="label-text">Email</span>
+          <input formControlName = "email" type="text" name="email" />
+        </label>
+        <span *ngIf="registerFormGroup!.get('email')!.invalid && (registerFormGroup!.get('email')!.touched || registerFormGroup!.get('email')!.dirty) " style="color: red;font-size: 12px;">Invalid Email</span>
+
+        <label [ngStyle] = "{'color' : (registerFormGroup!.get('password')!.invalid && (registerFormGroup!.get('password')!.touched || registerFormGroup!.get('password')!.dirty)) ? 'red' : 'black'}" class="password">
+          <span class="label-text">Password</span>
+          <input formControlName = "password" type="{{ showPassWord ? 'text' : 'password' }}" name="password" />
+        </label>
+        <div class="checkbox d-flex m-1">
+                <input (click) = "changeType()" type="checkbox" id="showPassword" /><p>show password</p>   
+        </div>
+ 
+        <span *ngIf="registerFormGroup!.get('password')!.invalid && (registerFormGroup!.get('password')!.touched || registerFormGroup!.get('password')!.dirty) " style="color: red;font-size: 12px;">Set a strong Password</span>
+        
+        <div class="text-center">
+            <button class="submit" name="register" (click) = "registerUser()">Sign up</button>
+          </div>
+      </form>
+      <div class="d-flex content">
+
+    <h2 class="text-center my-4"><span>OR</span></h2>
+    <p class="text-center my-3">
+      Already Have an account ?
+      <a (click)="selectFunction('Login')"
+        ><span class="register">Sign In</span></a
+      >
+    </p>
+  </div>
+  </div>
+
+</div>

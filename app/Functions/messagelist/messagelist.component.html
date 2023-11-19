@@ -1,0 +1,48 @@
+<div class="my-2 mx-4" *ngIf = "!noConvo">
+    <h2>{{ sender }} Conversations</h2>
+</div>
+<div class="convo" *ngIf = "noConvo">
+  <h1>No Conversation</h1>
+</div>
+<div class="container my-4" *ngIf = "!noConvo">
+  <div class="row">
+    <section class="discussions">
+      <div class="discussion" *ngFor="let item of recieverTenants; index as i">
+        <a (click) = "userChanged(i)" >
+            <div class="desc-contact">
+              <p class="name">{{ item }}</p>
+            </div>
+        </a>
+      </div>
+    </section>
+    <section class="chat">
+      <div class="chat-div">
+        <div class="header-chat">
+          <i class="icon fa fa-user-o" aria-hidden="true"></i>
+          <p class="name">{{ recieverTenants[idx] }}</p>
+        </div>
+        <div class="messages-chat">
+          <div class="message" *ngFor="let item of data[idx].messages">
+            <div class="response" *ngIf="recieverTenants[idx] != item.from">
+              <p class="response text">{{ item.message }}</p>
+            </div>
+            <p class="text" *ngIf="recieverTenants[idx] == item.from">
+              {{ item.message }}
+            </p>
+          </div>
+        </div>
+        <div class="footer-chat">
+          <input
+            type="text"
+            class="write-message"
+            placeholder="Type your message here"
+          />
+          <i
+            class="icon send fa fa-paper-plane-o clickable"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

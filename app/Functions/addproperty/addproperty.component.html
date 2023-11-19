@@ -1,0 +1,189 @@
+<div class="card-body m-4">
+  <form [formGroup]="propertyForm!">
+    <div class="row gutters row-card">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <h6 class="my-3 text">Property Details</h6>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="type">Type</label>
+            <input
+              formControlName="Type"
+              type="text"
+              class="form-control"
+              id="type"
+              placeholder="Enter Type of Property"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="phone">Available From</label>
+            <input
+              formControlName="AvailableFrom"
+              type="date"
+              class="form-control"
+              id="phone"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="website">Rent</label>
+            <input
+              formControlName="Rent"
+              id="selectAvatar"
+              class="form-control"
+              type="number"
+              name="myfile"
+              placeholder="Enter the rent"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="fullName">Location</label>
+            <input
+              formControlName="Location"
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Enter Description "
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="fullName">Ameneties</label>
+            <input
+              formControlName="Ameneties"
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Enter ameneties availabe "
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="fullName">Number of Rooms</label>
+            <input
+              formControlName="NumOfRooms"
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Enter Description "
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ele col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="fullName">Description</label>
+            <input
+              formControlName="Description"
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Enter Description "
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <h6 class="mt-3 mb-2 text">Images</h6>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="website">Frontal Image</label>
+            <input
+              (change)="picked($event, 1)"
+              id="selectAvatar"
+              class="form-control"
+              type="file"
+              name="myfile"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="website">BedRoom Image</label>
+            <input
+              (change)="picked($event, 2)"
+              id="selectAvatar"
+              class="form-control"
+              type="file"
+              name="myfile"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="website">Kitchen Image </label>
+            <input
+              (change)="picked($event, 3)"
+              id="selectAvatar"
+              class="form-control"
+              type="file"
+              name="myfile"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+        <div class="form-group">
+          <div class="form-div">
+            <label for="website">Bathroom Image </label>
+            <input
+              (change)="picked($event, 4)"
+              id="selectAvatar"
+              class="form-control"
+              type="file"
+              name="myfile"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row gutters">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pe-4">
+      <div class="text-right">
+        <button
+          (click)="submitProperty()"
+          type="button"
+          id="submit"
+          name="submit"
+          class="btn"
+        >
+          Add Property
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+      <div class="img">
+         
+      <img src = "data:image/jpeg;base64, {{sellersPermitString}}" alt="3456789678">
+      </div> -->

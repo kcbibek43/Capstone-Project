@@ -1,0 +1,11 @@
+export const authUrl = "https://localhost:7173/Auth";
+export const propertyUrl = "https://localhost:7173/api/Property";
+export const StrongPasswordRegx: RegExp =/^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\D*\d).{8,}$/;
+export const userUrl = "https://localhost:7173/api/UserDetails";
+export const reviewUrl = "https://localhost:7173/api/reviews/Reviews";
+export const appointmentUrl = "https://localhost:7173/api/appointment/Appointment";
+export const mapUrlStart = "https://api.geoapify.com/v1/geocode/search?text=";
+export const mapUrlEnd = "&apiKey=00ed10c77f7d41f4993793397e020fcb";
+export const locationUrl = "https://localhost:7173/api/Location";
+export const messageUrl = "https://localhost:7173/api/message/Message";
+export const documentUrl = "https://localhost:7173/api/Document";
