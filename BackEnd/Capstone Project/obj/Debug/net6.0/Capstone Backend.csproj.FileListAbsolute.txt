@@ -1,0 +1,66 @@
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\appsettings.json
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Capstone Backend.exe
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Capstone Backend.deps.json
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Capstone Backend.runtimeconfig.json
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Capstone Backend.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Capstone Backend.pdb
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\DnsClient.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.Owin.Security.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.Owin.Security.Jwt.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Microsoft.Owin.Security.OAuth.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Owin.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Snappier.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\BIKC000\source\repos\MongoDemo\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.csproj.AssemblyReference.cache
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.AssemblyInfoInputs.cache
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.AssemblyInfo.cs
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.csproj.CoreCompileInputs.cache
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets\msbuild.Capstone Backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.Capstone Backend.props
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Capstone Backend.props
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Capstone Backend.props
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\scopedcss\bundle\Capstone Backend.styles.css
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.csproj.CopyComplete
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.dll
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\refint\Capstone Backend.dll
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.pdb
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\Capstone Backend.genruntimeconfig.cache
+C:\Users\BIKC000\source\repos\MongoDemo\obj\Debug\net6.0\ref\Capstone Backend.dll
